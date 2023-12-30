@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import CardDetails from './CardDetails';
 
-// const noImageAvailable = 'no_image_available.png'
 const noImageAvailable = 'no_image.jpeg'
 export default function NewsCard({ title, description, content, urlToImage, publishedAt, author, source }) {
     const [isModalOpen, setIsModalOpen] = useState(false);

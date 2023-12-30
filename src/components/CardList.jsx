@@ -6,7 +6,6 @@ import NewsCard from './NewsCard';
 import { useNewsContext } from '../context/newsContext';
 
 export default function CardList({ apiResponse }) {
-    console.log("API RESPSINSE: ", apiResponse)
     const [visibleNews, setVisibleNews] = useState([]);
     const [hasMore, setHasMore] = useState(true);
     const { addReadLaterItem } = useNewsContext();
@@ -16,7 +15,6 @@ export default function CardList({ apiResponse }) {
     }, [apiResponse])
 
     const fetchMoreData = () => {
-        console.log("Fetch More data is called")
         const startIndex = visibleNews.length;
         const endIndex = startIndex + 10;
         const moreData = apiResponse.slice(startIndex, endIndex);
