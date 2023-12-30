@@ -23,11 +23,16 @@ Clone the repository
 ```sh
 git clone https://github.com/obaidullah-faruk/news-app.git
 ```
-### Put the API Key in the .env file REACT_APP_API_KEY='YOUR API KEY'
 
-
+Put the News API Key in the .env file
+```sh
+REACT_APP_API_KEY='YOUR API KEY'
 ```
+
+In terminal
+```sh
 cd news-app
+npm i
 npm start
 ```
 
